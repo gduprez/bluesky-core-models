@@ -1,6 +1,17 @@
 
-
-
+var bluesky;
+(function (bluesky) {
+    var core;
+    (function (core) {
+        var command;
+        (function (command) {
+            var SupportedResponseFormatEnum;
+            (function (SupportedResponseFormatEnum) {
+                SupportedResponseFormatEnum["CSV"] = "csv";
+            })(SupportedResponseFormatEnum = command.SupportedResponseFormatEnum || (command.SupportedResponseFormatEnum = {}));
+        })(command = core.command || (core.command = {}));
+    })(core = bluesky.core || (bluesky.core = {}));
+})(bluesky || (bluesky = {}));
 
 
 
@@ -183,6 +194,16 @@ var bluesky;
 
 
 
+
+
+
+
+
+
+
+
+
+
 var bluesky;
 (function (bluesky) {
     var core;
@@ -211,10 +232,6 @@ var bluesky;
         })(model = core.model || (core.model = {}));
     })(core = bluesky.core || (bluesky.core = {}));
 })(bluesky || (bluesky = {}));
-
-
-
-
 
 
 
@@ -314,50 +331,6 @@ var bluesky;
 
 
 
-var bluesky;
-(function (bluesky) {
-    var core;
-    (function (core) {
-        var model;
-        (function (model) {
-            var taxManagement;
-            (function (taxManagement) {
-                var TaxActionEnum;
-                (function (TaxActionEnum) {
-                    TaxActionEnum[TaxActionEnum["Add"] = 0] = "Add";
-                    TaxActionEnum[TaxActionEnum["Modify"] = 1] = "Modify";
-                    TaxActionEnum[TaxActionEnum["Cease"] = 2] = "Cease";
-                })(TaxActionEnum = taxManagement.TaxActionEnum || (taxManagement.TaxActionEnum = {}));
-            })(taxManagement = model.taxManagement || (model.taxManagement = {}));
-        })(model = core.model || (core.model = {}));
-    })(core = bluesky.core || (bluesky.core = {}));
-})(bluesky || (bluesky = {}));
-
-
-var bluesky;
-(function (bluesky) {
-    var core;
-    (function (core) {
-        var model;
-        (function (model) {
-            var taxManagement;
-            (function (taxManagement) {
-                var TaxExemptTypeEnum;
-                (function (TaxExemptTypeEnum) {
-                    TaxExemptTypeEnum[TaxExemptTypeEnum["Federal"] = 0] = "Federal";
-                    TaxExemptTypeEnum[TaxExemptTypeEnum["State"] = 1] = "State";
-                })(TaxExemptTypeEnum = taxManagement.TaxExemptTypeEnum || (taxManagement.TaxExemptTypeEnum = {}));
-            })(taxManagement = model.taxManagement || (model.taxManagement = {}));
-        })(model = core.model || (core.model = {}));
-    })(core = bluesky.core || (bluesky.core = {}));
-})(bluesky || (bluesky = {}));
-
-
-
-
-
-
-
 
 
 
@@ -399,6 +372,48 @@ var bluesky;
 
 
 
+
+
+
+
+
+var bluesky;
+(function (bluesky) {
+    var core;
+    (function (core) {
+        var model;
+        (function (model) {
+            var taxManagement;
+            (function (taxManagement) {
+                var TaxActionEnum;
+                (function (TaxActionEnum) {
+                    TaxActionEnum[TaxActionEnum["Add"] = 0] = "Add";
+                    TaxActionEnum[TaxActionEnum["Modify"] = 1] = "Modify";
+                    TaxActionEnum[TaxActionEnum["Cease"] = 2] = "Cease";
+                })(TaxActionEnum = taxManagement.TaxActionEnum || (taxManagement.TaxActionEnum = {}));
+            })(taxManagement = model.taxManagement || (model.taxManagement = {}));
+        })(model = core.model || (core.model = {}));
+    })(core = bluesky.core || (bluesky.core = {}));
+})(bluesky || (bluesky = {}));
+
+
+var bluesky;
+(function (bluesky) {
+    var core;
+    (function (core) {
+        var model;
+        (function (model) {
+            var taxManagement;
+            (function (taxManagement) {
+                var TaxExemptTypeEnum;
+                (function (TaxExemptTypeEnum) {
+                    TaxExemptTypeEnum[TaxExemptTypeEnum["Federal"] = 0] = "Federal";
+                    TaxExemptTypeEnum[TaxExemptTypeEnum["State"] = 1] = "State";
+                })(TaxExemptTypeEnum = taxManagement.TaxExemptTypeEnum || (taxManagement.TaxExemptTypeEnum = {}));
+            })(taxManagement = model.taxManagement || (model.taxManagement = {}));
+        })(model = core.model || (core.model = {}));
+    })(core = bluesky.core || (bluesky.core = {}));
+})(bluesky || (bluesky = {}));
 
 
 
@@ -518,6 +533,26 @@ var bluesky;
 
 
 
+var bluesky;
+(function (bluesky) {
+    var core;
+    (function (core) {
+        var model;
+        (function (model) {
+            var salesforce;
+            (function (salesforce) {
+                /**
+                 * List of supported segment types for a SalesForce Account.
+                 */
+                var SegmentTypeEnum;
+                (function (SegmentTypeEnum) {
+                    SegmentTypeEnum[SegmentTypeEnum["Premium"] = 0] = "Premium";
+                    SegmentTypeEnum[SegmentTypeEnum["OnLine"] = 1] = "OnLine";
+                })(SegmentTypeEnum = salesforce.SegmentTypeEnum || (salesforce.SegmentTypeEnum = {}));
+            })(salesforce = model.salesforce || (model.salesforce = {}));
+        })(model = core.model || (core.model = {}));
+    })(core = bluesky.core || (bluesky.core = {}));
+})(bluesky || (bluesky = {}));
 
 
 
@@ -599,23 +634,4 @@ var bluesky;
 
 
 
-var bluesky;
-(function (bluesky) {
-    var core;
-    (function (core) {
-        var model;
-        (function (model) {
-            var salesforce;
-            (function (salesforce) {
-                /**
-                 * List of supported segment types for a SalesForce Account.
-                 */
-                var SegmentTypeEnum;
-                (function (SegmentTypeEnum) {
-                    SegmentTypeEnum[SegmentTypeEnum["Premium"] = 0] = "Premium";
-                    SegmentTypeEnum[SegmentTypeEnum["OnLine"] = 1] = "OnLine";
-                })(SegmentTypeEnum = salesforce.SegmentTypeEnum || (salesforce.SegmentTypeEnum = {}));
-            })(salesforce = model.salesforce || (model.salesforce = {}));
-        })(model = core.model || (core.model = {}));
-    })(core = bluesky.core || (bluesky.core = {}));
-})(bluesky || (bluesky = {}));
+
